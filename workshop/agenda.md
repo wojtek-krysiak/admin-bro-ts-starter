@@ -71,3 +71,16 @@ TODO
 
 # Akcje
 * edit layout in worklog
+
+
+
+
+
+
+
+
+
+Uwagi:
+* nowa akcja component false by default
+* drawer jako default
+* BaseProperty.Edit

@@ -1,5 +1,10 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
+
+import router from './admin/router';
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -11,6 +16,8 @@ const run = async () => {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
+
+  app.use('/admin', router);
 
   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 };
